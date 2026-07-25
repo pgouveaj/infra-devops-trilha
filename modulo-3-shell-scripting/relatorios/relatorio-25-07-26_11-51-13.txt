@@ -1,0 +1,70 @@
+===========================================
+|       RELATÓRIO DIÁRIO DO AMBIENTE      |
+===========================================
+
+Data: Sat Jul 25 11:51:13 -03 2026
+Hostname: CE-NOTE-0068
+Usuário responsável: root
+
+===========================================
+|                  CPU                    |
+===========================================
+Uso de CPU: 0%
+
+Cinco processos que mais utilizam CPU:
+
+    PID USER     COMMAND         %CPU
+     87 root     systemd-udevd    0.0
+      1 root     systemd          0.0
+   1903 jeangou+ bash             0.0
+    117 root     networkd-dispat  0.0
+     46 root     systemd-journal  0.0
+
+===========================================
+|                 DISCO                   |
+===========================================
+
+Uso de disco:
+1%
+
+Diretórios que mais ocupam espaço:
+
+2.8G	/
+2.2G	/usr
+1.3G	/usr/lib
+663M	/usr/lib/x86_64-linux-gnu
+536M	/usr/share
+
+===========================================
+|              MEMÓRIA RAM                |
+===========================================
+
+Uso de memória:
+
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       610Mi       6.6Gi       3.5Mi       617Mi       7.0Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+===========================================
+|            SERVIÇOS E LOGS              |
+===========================================
+
+Serviço: ssh
+Status: inativo
+Quantidade de erros: 0
+Últimos 10 erros:
+Nenhum erro encontrado.
+
+Serviço: cron
+Status: ativo
+Quantidade de erros: 0
+Últimos 10 erros:
+Nenhum erro encontrado.
+
+===========================================
+|             RESUMO GERAL                |
+===========================================
+CPU usada: 0%
+Disco usado: 1%
+RAM usada: 7.8%
+Quantidade total de erros: 0

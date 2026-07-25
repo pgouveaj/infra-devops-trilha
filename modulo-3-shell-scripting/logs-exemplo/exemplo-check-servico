@@ -1,0 +1,23 @@
+# antes da instalação do openssh-server:
+__________________________________________________
+|                                                 |
+|   EXECUTANDO SCRIPT DE VERIFICAÇÃO DE SERVIÇO   |
+|_________________________________________________|
+Digite o nome do serviço para a verificação: ssh
+O serviço 'ssh' não foi encontrado.
+
+
+
+
+# depois da instalação do openssh-server:
+__________________________________________________
+|                                                 |
+|   EXECUTANDO SCRIPT DE VERIFICAÇÃO DE SERVIÇO   |
+|_________________________________________________|
+Digite o nome do serviço para a verificação: ssh
+○ ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/usr/lib/systemd/system/ssh.service; disabled; preset: enabled)
+     Active: inactive (dead)
+TriggeredBy: ● ssh.socket
+       Docs: man:sshd(8)
+             man:sshd_config(5)

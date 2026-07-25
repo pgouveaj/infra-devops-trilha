@@ -1,0 +1,15 @@
+______________________________________________
+|                                             |
+|   EXECUTANDO SCRIPT DE VERIFICAÇÃO DE CPU   |
+|_____________________________________________|
+
+Uso geral da CPU:
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+
+Cinco processos que mais utilizam CPU:
+    PID USER     COMMAND         %CPU
+     87 root     systemd-udevd    0.0
+      1 root     systemd          0.0
+   1903 jeangou+ bash             0.0
+    117 root     networkd-dispat  0.0
+     46 root     systemd-journal  0.0
