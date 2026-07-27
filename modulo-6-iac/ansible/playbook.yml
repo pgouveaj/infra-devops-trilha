@@ -1,0 +1,37 @@
+--- 
+- name: Configurar servidor web de laboratório 
+  hosts: servidores_web 
+  become: true 
+
+  vars: 
+    local_index: "/mnt/c/Users/jean.gouvea/Downloads/laboratorios-testes/laboratorio-terraform/infra-devops-trilha/modulo-6-iac/ansible/site/index.html" 
+
+  tasks: 
+    - name: Atualizar lista de pacotes 
+      ansible.builtin.apt: 
+        update_cache: true 
+        cache_valid_time: 3600 
+
+    - name: Instalar o Nginx 
+      ansible.builtin.apt: 
+        name: nginx 
+        state: present 
+
+    - name: Criar página do laboratório 
+      ansible.builtin.copy: 
+        src: "{{ local_index }}"
+        dest: /var/www/html/index.html 
+        owner: root 
+        group: root 
+        mode: "0644" 
+
+    - name: Garantir que o Nginx esteja iniciado 
+      ansible.builtin.service: 
+        name: nginx 
+        state: started 
+        enabled: true 
+
+    - name: Validar resposta do servidor 
+      ansible.builtin.uri: 
+        url: http://localhost
+        status_code: 200
